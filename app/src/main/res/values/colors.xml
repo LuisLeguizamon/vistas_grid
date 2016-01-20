@@ -3,4 +3,34 @@
     <color name="colorPrimary">#008dc5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#FFFF</color>
+    <!--paleta material design-->
+    <color name="red">#F44336</color>
+    <color name="pink">#E91E63</color>
+    <color name="purple">#9C27B0</color>
+    <color name="deep_purple">#673AB7</color>
+    <color name="indigo">#3F51B5</color>
+    <color name="blue">#2196F3</color>
+    <color name="teal">#009688</color>
+    <color name="amber">#FFC107</color>
+    <color name="green">#4CAF50</color>
+    <color name="orange_dark">#F57C00</color>
+    <color name="blue_grey">#607D8B</color>
+
+
+    <array name="rainbow">
+        <item>@color/teal</item>
+        <item>@color/pink</item>
+        <item>@color/blue_grey</item>
+        <item>@color/green</item>
+        <item>@color/indigo</item>
+        <item>@color/orange_dark</item>
+        <item>@color/purple</item>
+        <item>@color/blue</item>
+
+    </array>
+
+
+
 </resources>

@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 /**
@@ -35,11 +36,53 @@ public class ImageAdapter extends BaseAdapter {
             gridView = inflater.inflate(R.layout.item_list,null);
 
             //set value into textview
-            TextView textview = (TextView) gridView
-                    .findViewById(R.id.txt_item);
+            TextView texto = (TextView) gridView.findViewById(R.id.txt_item);
 
-            textview.setText(valores[position]);
+            texto.setText(valores[position]);
 
+           //traemos el array del xml colors
+
+            int [] rainbow = contexto.getResources().getIntArray(R.array.rainbow);
+
+            //cambia el color de fondo de acuerdo a la posicion
+            gridView.setBackgroundColor(rainbow[position]);
+
+            ImageView imagen = (ImageView) gridView.findViewById(R.id.image_item);
+
+            String s = valores[position];
+
+            if (s.startsWith("AGRO"))
+            {
+                imagen.setImageResource(R.mipmap.agro);
+            }
+            else if(s.startsWith("ARTES"))
+            {
+                imagen.setImageResource(R.mipmap.artes);
+            }
+            else if(s.startsWith("ELECTRICIDAD"))
+            {
+                imagen.setImageResource(R.mipmap.electricidad);
+            }
+            else if (s.startsWith("FINANZAS"))
+            {
+                imagen.setImageResource(R.mipmap.finanzas);
+            }
+            else if(s.startsWith("GASTRONOMÍA"))
+            {
+                imagen.setImageResource(R.mipmap.gastronomia);
+            }
+            else if(s.startsWith("TECNOLOGÍA"))
+            {
+                imagen.setImageResource(R.mipmap.tecnologia);
+            }
+            else if(s.startsWith("IDIOMAS"))
+            {
+                imagen.setImageResource(R.mipmap.idiomas);
+            }
+            else if(s.startsWith("SALUD"))
+            {
+                imagen.setImageResource(R.mipmap.salud);
+            }
 
         }
 
