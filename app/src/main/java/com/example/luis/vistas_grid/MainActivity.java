@@ -8,7 +8,7 @@ public class MainActivity extends AppCompatActivity {
 
     GridView gridView;
 
-    static final String[] valores = new String[] {"AGRO","ARTES","ELECTRICIDAD","FINANZAS","GASTRONOMÍA","TECNOLOGÍA","IDIOMAS","SALUD"};
+    static final String[] valores = new String[] {"Agro","Artes","Electricidad","Finanzas","Gastronomía","Tecnología","Idiomas","Salud"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
