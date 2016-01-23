@@ -1,8 +1,14 @@
 package com.example.luis.vistas_grid;
 
+import android.media.Image;
+import android.provider.Telephony;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.ImageView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,7 +22,18 @@ public class MainActivity extends AppCompatActivity {
 
         gridView = (GridView) findViewById(R.id.grid_view);
 
-        gridView.setAdapter(new ImageAdapter(this,valores));
+        gridView.setAdapter(new ImageAdapter(this, valores));
+
+        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                Toast.makeText(MainActivity.this, "Wrong Input", Toast.LENGTH_LONG).show();
+            }
+        });
 
     }
+
 }
+
+

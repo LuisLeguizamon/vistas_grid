@@ -55,38 +55,43 @@ public class ImageAdapter extends BaseAdapter {
 
             if (s.startsWith("Agro"))
             {
-                imagen.setImageResource(R.mipmap.agro);
+                //imagen.setImageResource(R.mipmap.agro);
                 imagen.setBackgroundResource(R.drawable.agro_b);
             }
             else if(s.startsWith("Artes"))
             {
-                imagen.setImageResource(R.mipmap.artes);
+                //imagen.setImageResource(R.mipmap.artes);
                 imagen.setBackgroundResource(R.drawable.artes_b);
             }
             else if(s.startsWith("Electricidad"))
             {
-                imagen.setImageResource(R.mipmap.electricidad);
+                //imagen.setImageResource(R.mipmap.electricidad);
                 imagen.setBackgroundResource(R.drawable.electricidad_b);
             }
             else if (s.startsWith("Finanzas"))
             {
-                imagen.setImageResource(R.mipmap.finanzas);
+                //imagen.setImageResource(R.mipmap.finanzas);
+                imagen.setBackgroundResource(R.drawable.finanzas_b);
             }
             else if(s.startsWith("Gastronomía"))
             {
-                imagen.setImageResource(R.mipmap.gastronomia);
+                //imagen.setImageResource(R.mipmap.gastronomia);
+                imagen.setBackgroundResource(R.drawable.gastronomia_b);
             }
             else if(s.startsWith("Tecnología"))
             {
-                imagen.setImageResource(R.mipmap.tecnologia);
+                //imagen.setImageResource(R.mipmap.tecnologia);
+                imagen.setBackgroundResource(R.drawable.tecnologia_b);
             }
             else if(s.startsWith("Idiomas"))
             {
-                imagen.setImageResource(R.mipmap.idiomas);
+                //imagen.setImageResource(R.mipmap.idiomas);
+                imagen.setBackgroundResource(R.drawable.idiomas_b);
             }
             else if(s.startsWith("Salud"))
             {
-                imagen.setImageResource(R.mipmap.salud);
+                //imagen.setImageResource(R.mipmap.salud);
+                imagen.setBackgroundResource(R.drawable.salud_b);
             }
 
         }
