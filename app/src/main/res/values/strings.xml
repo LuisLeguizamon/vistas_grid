@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Cursapp</string>
+    <string name="title_activity_listab">Listab</string>
 </resources>

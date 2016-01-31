@@ -2,13 +2,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:onClick="ir">
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="110dp"
         android:layout_gravity="center"
-        android:id="@+id/image_item" />
+        android:id="@+id/image_item"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -20,6 +21,3 @@
         android:id="@+id/txt_item"/>
 
 </LinearLayout>
-
-
-    <!-- android:background="@color/red_b"-->

@@ -1,5 +1,6 @@
 package com.example.luis.vistas_grid;
 
+import android.content.Intent;
 import android.media.Image;
 import android.provider.Telephony;
 import android.support.v7.app.AppCompatActivity;
@@ -30,9 +31,14 @@ public class MainActivity extends AppCompatActivity {
 
                 Toast.makeText(MainActivity.this, "Wrong Input", Toast.LENGTH_LONG).show();
             }
-        });
+        });}
 
-    }
+
+    public void ir(View vista){
+        Intent intent = new Intent(this,Listab.class);
+        startActivity(intent);}
+
+
 
 }
 
