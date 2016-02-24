@@ -7,10 +7,8 @@
     android:orientation="vertical"
     tools:context="com.example.luis.vistas_grid.Listab"
     tools:showIn="@layout/activity_listab"
-    android:background="@color/green"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="56dp"
+    android:background="@color/colorPrimary"
+    android:padding="16dp"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
 
@@ -19,7 +17,6 @@
         android:layout_height="match_parent"
         android:fontFamily="sans-serif"
         android:textSize="16sp"
-        android:padding="16dp"
         android:textColor="@color/white"
         android:id="@+id/tx_b"/>
 

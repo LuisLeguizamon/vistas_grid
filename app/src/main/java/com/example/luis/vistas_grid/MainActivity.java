@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -15,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     GridView gridView;
 
-    static final String[] valores = new String[] {"Agro","Artes","Electricidad","Finanzas","Gastronomía","Tecnología","Idiomas","Salud"};
+    static final String[] valores = new String[] {"Agro","Artes","Electricidad","Finanzas","Gastronomía","Idiomas","Salud","Tecnología"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,17 +30,21 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                Toast.makeText(MainActivity.this, "Wrong Input", Toast.LENGTH_LONG).show();
+                //Toast.makeText(MainActivity.this, "0", Toast.LENGTH_LONG).show();
+                ir(position);
+
             }
         });}
 
 
-    public void ir(View vista){
+    public void ir(int position)
+    {
         Intent intent = new Intent(this,Listab.class);
-        startActivity(intent);}
-
-
+        intent.putExtra("position",position);
+        startActivity(intent);
+    }
 
 }
+
 
 

@@ -1,5 +1,6 @@
 package com.example.luis.vistas_grid;
 
+import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -47,12 +48,16 @@ public class MyAdapterb extends RecyclerView.Adapter<MyAdapterb.ViewHolder>{
         return vh;
     }
 
+
+
+
     // Replace the contents of a view (invoked by the layout manager)
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         // - get element from your dataset at this position
         // - replace the contents of the view with that element
         holder.getTexto().setText(mDataset[position]);
+
     }
 
 
