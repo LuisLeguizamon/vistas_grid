@@ -45,6 +45,9 @@ public class MyAdapterb extends RecyclerView.Adapter<MyAdapterb.ViewHolder>{
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.content_listab, parent, false);
         // set the view's size, margins, paddings and layout parameters
         ViewHolder vh = new ViewHolder(v);
+
+      // to change color of view
+      // vh.itemView.setBackgroundColor(parent.getContext().getResources().getColor(R.color.blue_grey));
         return vh;
     }
 

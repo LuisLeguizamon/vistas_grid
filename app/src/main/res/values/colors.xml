@@ -18,6 +18,8 @@
     <color name="orange_dark">#F57C00</color>
     <color name="blue_grey">#607D8B</color>
 
+    <color name="divider_12white">#1FFFFFFF</color>
+
     <!-- background colors -->
     <color name="pink_b">#99E91E63</color>
     <color name="teal_b">#99009688</color>

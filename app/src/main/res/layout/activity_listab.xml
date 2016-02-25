@@ -22,17 +22,8 @@
     </android.support.design.widget.AppBarLayout>
 
 
+    <!--<include layout="@layout/content_listab" />-->
 
-
-
-    <include layout="@layout/content_listab" />
-
-    <ImageView
-        android:layout_width="180dp"
-        android:layout_height="180dp"
-        android:layout_marginTop="420dp"
-        android:layout_marginLeft="-30dp"
-        android:src="@drawable/ic_launcher_cursapp_transbz"/>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/my_recycler_view"
@@ -40,6 +31,15 @@
         android:layout_height="match_parent"
         android:scrollbars="vertical"
         android:layout_marginTop="56dp"/>
+
+
+
+<!--    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="420dp"
+        android:layout_marginLeft="-30dp"
+        android:src="@drawable/ic_launcher_cursapp_transbz"/>
 
 
     <android.support.design.widget.FloatingActionButton
@@ -50,7 +50,7 @@
         android:layout_margin="@dimen/fab_margin"
         android:src="@android:drawable/ic_dialog_email" />
 
-
+-->
 
 </android.support.design.widget.CoordinatorLayout>
 
