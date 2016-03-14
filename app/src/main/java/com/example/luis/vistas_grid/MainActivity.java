@@ -13,11 +13,13 @@ import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
 
     GridView gridView;
 
-    static final String[] valores = new String[] {"Agro","Artes","Electricidad","Finanzas","Gastronomía","Idiomas","Salud","Tecnología"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,18 +27,33 @@ public class MainActivity extends AppCompatActivity {
 
         gridView = (GridView) findViewById(R.id.grid_view);
 
-        gridView.setAdapter(new ImageAdapter(this, valores));
+        // Construct the data source
+        ArrayList<Grid_Data> DATA=new ArrayList<Grid_Data>();
+
+        // Populating Data into GridView
+        DATA.add(new Grid_Data(0,"Agro"));
+        DATA.add(new Grid_Data(1,"Artes"));
+        DATA.add(new Grid_Data(2,"Electricidad"));
+        DATA.add(new Grid_Data(3,"Finanzas"));
+        DATA.add(new Grid_Data(4,"Gastronomía"));
+        DATA.add(new Grid_Data(5,"Idiomas"));
+        DATA.add(new Grid_Data(6,"Salud"));
+        DATA.add(new Grid_Data(7,"Tecnología"));
+
+
+
+        // Create the adapter to convert the array to views
+        ImageAdapter adapter = new ImageAdapter(this, DATA);
+// Attach the adapter to a GridView
+
+        gridView.setAdapter(adapter);
 
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-                //Toast.makeText(MainActivity.this, "0", Toast.LENGTH_LONG).show();
                 ir(position);
-
             }
         });}
-
 
 
     @Override
@@ -46,10 +63,12 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-    public void ir(int position)
+
+
+    public void ir(int position_grid)
     {
         Intent intent = new Intent(this,Listab.class);
-        intent.putExtra("position",position);
+        intent.putExtra("position", position_grid);
         startActivity(intent);
     }
 

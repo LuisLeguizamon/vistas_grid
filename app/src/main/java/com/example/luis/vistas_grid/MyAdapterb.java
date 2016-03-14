@@ -1,11 +1,16 @@
 package com.example.luis.vistas_grid;
 
+import android.content.Context;
+import android.content.Intent;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * Created by luis on 29/01/16.
@@ -13,28 +18,42 @@ import android.widget.TextView;
 public class MyAdapterb extends RecyclerView.Adapter<MyAdapterb.ViewHolder>{
     private String[] mDataset;
 
+
+    // Provide a suitable constructor (depends on the kind of dataset)
+    public MyAdapterb( String[] myDataset) {
+        mDataset = myDataset;
+    }
+
     // Provide a reference to the views for each data item
     // Complex data items may need more than one view per item, and
     // you provide access to all the views for a data item in a view holder
-    public static class ViewHolder extends RecyclerView.ViewHolder {
+    public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         // each data item is just a string in this case
         public TextView texto;
 
         public ViewHolder(View v) {
             super(v);
             texto= (TextView) v.findViewById(R.id.tx_b);
+            v.setOnClickListener(this);
+
         }
 
         public TextView getTexto(){
             return texto;
         }
-    }
+        int posit;
+        String xs;
+        @Override
+        public void onClick(View v) {
+            posit=this.getAdapterPosition();
+            xs=String.valueOf(posit);
+            Toast.makeText(v.getContext(), xs , Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(v.getContext(),Detalles.class);
+            intent.putExtra("position_list",posit);
+            Log.d("posit=",String.valueOf(posit));
+            v.getContext().startActivity(intent);
+        }
 
-
-
-    // Provide a suitable constructor (depends on the kind of dataset)
-    public MyAdapterb(String[] myDataset) {
-        mDataset = myDataset;
     }
 
 
@@ -50,8 +69,6 @@ public class MyAdapterb extends RecyclerView.Adapter<MyAdapterb.ViewHolder>{
       // vh.itemView.setBackgroundColor(parent.getContext().getResources().getColor(R.color.blue_grey));
         return vh;
     }
-
-
 
 
     // Replace the contents of a view (invoked by the layout manager)
@@ -70,5 +87,6 @@ public class MyAdapterb extends RecyclerView.Adapter<MyAdapterb.ViewHolder>{
     public int getItemCount() {
         return mDataset.length;
     }
+
 
 }

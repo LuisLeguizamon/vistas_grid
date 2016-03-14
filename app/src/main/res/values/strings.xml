@@ -5,4 +5,5 @@
 
     <string name="action_settings">Configuración</string>
     <string name="action_search">Buscar</string>
+    <string name="title_activity_detalles">Detalles</string>
 </resources>

@@ -5,40 +5,34 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 /**
  * Created by luis on 18/01/16.
  */
-public class ImageAdapter extends BaseAdapter {
+public class ImageAdapter extends ArrayAdapter<Grid_Data> {
 
-    private Context contexto;
-    private final String[] valores;
+    public ImageAdapter(Context context, ArrayList<Grid_Data> grid_data){
+       super(context,0,grid_data);
 
-    public ImageAdapter(Context context, String[] values){
-        this.contexto=context;
-        this.valores=values;
     }
-
+    @Override
     public View getView(int position, View convertView, ViewGroup parent){
 
         LayoutInflater inflater = (LayoutInflater)
-                contexto.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
         View gridView;
 
         if (convertView==null) {
-
-
-            //gridView = new View(contexto);
-
-
             //get layout from item_list.xml
             gridView = inflater.inflate(R.layout.item_list, null);
-
         }
 
         else {
@@ -46,51 +40,56 @@ public class ImageAdapter extends BaseAdapter {
 
 
         //set value into textview
-            TextView texto = (TextView) gridView.findViewById(R.id.txt_item);
+            TextView textv = (TextView) gridView.findViewById(R.id.txt_item);
 
-            texto.setText(valores[position]);
+          Grid_Data item = getItem(position);
+
+            int id = item.id_grid;
+            String titles= item.titles_grid;
+
+            textv.setText(titles);
 
            //traemos el array del xml colors
 
-            int [] rainbow = contexto.getResources().getIntArray(R.array.rainbow);
+            int [] rainbow = getContext().getResources().getIntArray(R.array.rainbow);
 
             //cambia el color de fondo del texto de acuerdo a la posicion
-            texto.setBackgroundColor(rainbow[position]);
+            textv.setBackgroundColor(rainbow[position]);
 
             ImageView imagen = (ImageView) gridView.findViewById(R.id.image_item);
 
-            String s = valores[position];
+           // String s = valores[position];
 
-            if (s.startsWith("Agro"))
+            if (id==0)
             {
                 //imagen.setImageResource(R.mipmap.agro);
                 imagen.setBackgroundResource(R.drawable.agro_b);
             }
-            else if(s.startsWith("Artes"))
+            else if(id==1)
             {
                 imagen.setBackgroundResource(R.drawable.artes_b);
             }
-            else if(s.startsWith("Electricidad"))
+            else if(id==2)
             {
                 imagen.setBackgroundResource(R.drawable.electricidad_b);
             }
-            else if (s.startsWith("Finanzas"))
+            else if (id==3)
             {
                 imagen.setBackgroundResource(R.drawable.finanzas_b);
             }
-            else if(s.startsWith("Gastronomía"))
+            else if(id==4)
             {
                 imagen.setBackgroundResource(R.drawable.gastronomia_b);
             }
-            else if(s.startsWith("Idiomas"))
+            else if(id==5)
             {
                 imagen.setBackgroundResource(R.drawable.idiomas_b);
             }
-            else if(s.startsWith("Salud"))
+            else if(id==6)
             {
                 imagen.setBackgroundResource(R.drawable.salud_b);
             }
-            else if(s.startsWith("Tecnología"))
+            else if(id==7)
             {
                 imagen.setBackgroundResource(R.drawable.tecnologia_b);
             }
@@ -100,7 +99,7 @@ public class ImageAdapter extends BaseAdapter {
 
         }
 
-    @Override
+   /* @Override
     public int getCount() { return valores.length;}
 
     @Override
@@ -108,5 +107,5 @@ public class ImageAdapter extends BaseAdapter {
 
     @Override
     public long getItemId(int position){return 0;}
-
+*/
 }

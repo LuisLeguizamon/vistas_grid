@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.luis.vistas_grid.Detalles">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+            </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView android:id="@+id/tx_title_detalles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="16dp"
+        android:textColor="@color/primary_text"
+        android:text="Titulo"
+        />
+
+    <TextView android:id="@+id/tx_content_detalles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="16dp"
+        android:textColor="@color/secondary_text"
+        android:text="Horario: 16:00 hs"></TextView>
+
+    <TextView android:id="@+id/tx_content_detalles_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="16dp"
+        android:textColor="@color/secondary_text"
+        android:text="Lugar: SNPP Central" />
+
+    <TextView android:id="@+id/tx_content_detalles_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="170dp"
+        android:layout_marginLeft="16dp"
+        android:textColor="@color/secondary_text"
+        android:text="Costo: Gratuito" />
+
+    <TextView android:id="@+id/tx_content_detalles_d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="16dp"
+        android:textColor="@color/secondary_text"
+        android:text="Duración: 10/03 - 20/03" />
+
+
+    <TextView android:id="@+id/tx_content_detalles_e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="230dp"
+        android:layout_marginLeft="16dp"
+        android:textColor="@color/secondary_text"
+        android:text="Requisitos: Fotocopia de C.I." />
+
+
+    <!--<include layout="@layout/content_detalles" />
+-->
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_dialog_email" />
+
+</android.support.design.widget.CoordinatorLayout>
+
