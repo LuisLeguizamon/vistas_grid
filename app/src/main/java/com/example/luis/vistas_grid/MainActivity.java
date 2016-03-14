@@ -64,9 +64,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
-    public void ir(int position_grid)
-    {
+    public void ir(int position_grid) {
         Intent intent = new Intent(this,Listab.class);
         intent.putExtra("position", position_grid);
         startActivity(intent);
