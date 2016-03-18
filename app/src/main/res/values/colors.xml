@@ -49,5 +49,16 @@
     <color name="purple_dark">#7B1FA2</color>
     <color name="blue_dark">#1976D2</color>
     <color name="indigo_dark">#303F9F</color>
-    
+
+    <array name="rainbow_dark">
+        <item>@color/green_dark</item>
+        <item>@color/pink_dark</item>
+        <item>@color/blue_grey_dark</item>
+        <item>@color/teal_dark</item>
+        <item>@color/orange_dark</item>
+        <item>@color/purple_dark</item>
+        <item>@color/blue_dark</item>
+        <item>@color/indigo_dark</item>
+    </array>
+
 </resources>

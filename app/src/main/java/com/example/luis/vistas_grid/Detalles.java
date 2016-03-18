@@ -33,7 +33,7 @@ public class Detalles extends AppCompatActivity {
             }
         });
 
-        //get data from MyAdapterb
+        //get data from ListabAdapter
         int position_list = getIntent().getExtras().getInt("position_list");
         Log.d("r=", String.valueOf(position_list));
         int position_grid= position_list;
@@ -45,7 +45,7 @@ public class Detalles extends AppCompatActivity {
         // String[] titles = getIntent().getExtras().getStringArray("toolbar_titles");
         // Log.d("R=",titles[position]);
 
-        //get data from MyAdapterb activity
+        //get data from ListabAdapter activity
       //  int position_lista = getIntent().getExtras().getInt("position");
 
         getSupportActionBar().setTitle("Detalles");

@@ -1,27 +1,28 @@
 package com.example.luis.vistas_grid;
 
-import android.content.Context;
 import android.content.Intent;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by luis on 29/01/16.
  */
-public class MyAdapterb extends RecyclerView.Adapter<MyAdapterb.ViewHolder>{
-    private String[] mDataset;
+public class ListabAdapter extends RecyclerView.Adapter<ListabAdapter.ViewHolder>{
+
+    List<Listab_Data> DATA;
 
 
     // Provide a suitable constructor (depends on the kind of dataset)
-    public MyAdapterb( String[] myDataset) {
-        mDataset = myDataset;
+    public ListabAdapter(List<Listab_Data> data){
+        this.DATA=data;
     }
 
     // Provide a reference to the views for each data item
@@ -59,7 +60,7 @@ public class MyAdapterb extends RecyclerView.Adapter<MyAdapterb.ViewHolder>{
 
     // Create new views (invoked by the layout manager)
     @Override
-    public MyAdapterb.ViewHolder onCreateViewHolder(ViewGroup parent,int viewType) {
+    public ListabAdapter.ViewHolder onCreateViewHolder(ViewGroup parent,int viewType) {
         // create a new view
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.content_listab, parent, false);
         // set the view's size, margins, paddings and layout parameters
@@ -76,17 +77,15 @@ public class MyAdapterb extends RecyclerView.Adapter<MyAdapterb.ViewHolder>{
     public void onBindViewHolder(ViewHolder holder, int position) {
         // - get element from your dataset at this position
         // - replace the contents of the view with that element
-        holder.getTexto().setText(mDataset[position]);
+        holder.getTexto().setText(DATA.get(position).titles_lista);
 
     }
-
-
 
     // Return the size of your dataset (invoked by the layout manager)
+    //método getItemCount. Éste debería regresar el número de elementos presentes en los datos. Como nuestro datos están en forma de una List, sólo necesitamos llamar al método size en el objeto List
     @Override
     public int getItemCount() {
-        return mDataset.length;
+        return DATA.size();
     }
-
 
 }

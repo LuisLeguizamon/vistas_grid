@@ -40,8 +40,6 @@ public class MainActivity extends AppCompatActivity {
         DATA.add(new Grid_Data(6,"Salud"));
         DATA.add(new Grid_Data(7,"Tecnología"));
 
-
-
         // Create the adapter to convert the array to views
         ImageAdapter adapter = new ImageAdapter(this, DATA);
 // Attach the adapter to a GridView
@@ -55,14 +53,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });}
 
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
-
 
     public void ir(int position_grid) {
         Intent intent = new Intent(this,Listab.class);
@@ -71,6 +67,3 @@ public class MainActivity extends AppCompatActivity {
     }
 
 }
-
-
-
