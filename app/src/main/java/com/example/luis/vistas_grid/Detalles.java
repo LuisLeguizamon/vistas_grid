@@ -11,12 +11,7 @@ import android.widget.TextView;
 
 public class Detalles extends AppCompatActivity {
 
-    public String[] cat = new String[]{"Agro","Artes","Electricidad","Finanzas","Gastronomía","Idiomas","Salud","Tecnología"};
 
-    public String[] Agro= new String[]{"Expoagro 2016", "Inseminación artificial",
-            "Feria del Productor al Consumidor en la Facultad de Agronomía",
-            "XIX Seminario Latinoamericano y del Caribe de Ciencia y Tecnología " +
-                    "de los Alimentos y de las XI Jornadas Uruguayas de Ciencia y Tecnología de Alimentos"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,42 +33,11 @@ public class Detalles extends AppCompatActivity {
         Log.d("r=", String.valueOf(position_list));
         int position_grid= position_list;
 
-//        int position_grid = getIntent().getExtras().getInt("position_grid");
 
-  //      Log.d("position_grid=", String.valueOf(position_grid));
-
-        // String[] titles = getIntent().getExtras().getStringArray("toolbar_titles");
-        // Log.d("R=",titles[position]);
-
-        //get data from ListabAdapter activity
-      //  int position_lista = getIntent().getExtras().getInt("position");
 
         getSupportActionBar().setTitle("Detalles");
-        if (position_grid== 0) {
-        }
-        else if (position_grid==1){
 
-        }
-        else if (position_grid==2){
 
-        }
-        else if (position_grid==3){
-
-        }
-        else if (position_grid==4){
-
-        }
-        else if (position_grid==5){
-
-        }
-        else if (position_grid==6){
-
-        }
-        else if (position_grid==7){
-
-        }
-
-        // public void set_title(int position, String[] titles){}
 
     }
 }

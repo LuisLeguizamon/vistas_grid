@@ -86,8 +86,8 @@ public class Listab extends AppCompatActivity {
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor(bar_color[position_grid])));
         getSupportActionBar().setTitle(toolbar_titles[position_grid]);
         populate(position_grid,position_list,DATA, val);
-        Intent intentb = new Intent(this,ListabAdapter.class);
-        intentb.putExtra("position_grid",position_grid);
+        //Intent intentb = new Intent(this,ListabAdapter.class);
+        //intentb.putExtra("position_grid",position_grid);
         //specify an adapter
 
         mAdapter = new ListabAdapter(DATA);
