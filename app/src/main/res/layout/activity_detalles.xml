@@ -40,16 +40,16 @@
         android:textColor="@color/secondary_text"
         android:text="Descripcion"
         android:layout_marginTop="90dp"
-        android:/>
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
 
     <TextView android:id="@+id/tx_content_detalles"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="18sp"
-        android:layout_marginTop="110dp"
+        android:layout_marginTop="115dp"
         android:layout_marginLeft="16dp"
         android:textColor="@color/secondary_text"
-        android:text="Horario: 16"></TextView>
+        android:text="Horario:"></TextView>
 
     <TextView android:id="@+id/tx_content_detalles_b"
         android:layout_width="wrap_content"
