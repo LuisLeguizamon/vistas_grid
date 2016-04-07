@@ -39,7 +39,8 @@
         android:textSize="20sp"
         android:textColor="@color/secondary_text"
         android:text="Descripcion"
-        android:layout_marginTop="90dp"/>
+        android:layout_marginTop="90dp"
+        android:/>
 
     <TextView android:id="@+id/tx_content_detalles"
         android:layout_width="wrap_content"
