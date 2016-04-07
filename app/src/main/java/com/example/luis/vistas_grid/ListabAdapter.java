@@ -1,6 +1,7 @@
 package com.example.luis.vistas_grid;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -50,15 +51,18 @@ public class ListabAdapter extends RecyclerView.Adapter<ListabAdapter.ViewHolder
         public void onClick(View v) {
             posit=this.getAdapterPosition();
             xs=String.valueOf(posit);
-            int z= id_grid;
-           String xz= String.valueOf(id_grid);
-            Toast.makeText(v.getContext(), xz , Toast.LENGTH_SHORT).show();
+            int id_grid_int= id_grid;
+            //String id_grid_string= String.valueOf(id_grid_int);
+            //Toast.makeText(v.getContext(), id_grid_string , Toast.LENGTH_SHORT).show();
+
+            Bundle bund = new Bundle();
+            bund.putInt("position_grid",id_grid_int);
+            bund.putInt("position_list", posit);
             Intent intent = new Intent(v.getContext(),Detalles.class);
-            intent.putExtra("position_list",posit);
-            Log.d("posit=",String.valueOf(posit));
+            intent.putExtras(bund);
+            //Log.d("posit=",String.valueOf(posit));
             v.getContext().startActivity(intent);
         }
-
     }
 
 

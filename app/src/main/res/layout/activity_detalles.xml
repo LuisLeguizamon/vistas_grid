@@ -24,73 +24,112 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <TextView android:id="@+id/tx_title_detalles"
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp">
+
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin">
+
+
+    <TextView android:id="@+id/txv_titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="20sp"
-        android:layout_marginTop="70dp"
-        android:layout_marginLeft="16dp"
+        android:paddingTop="16dp"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/primary_text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"
         android:textColor="@color/primary_text"
-        />
+        android:layout_marginTop="20dp"
+        android:text="Descripcion"/>
 
     <TextView android:id="@+id/txv_descripcion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:textColor="@color/secondary_text"
-        android:text="Descripcion"
-        android:layout_marginTop="90dp"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/secondary_text"/>
 
-    <TextView android:id="@+id/tx_content_detalles"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:layout_marginTop="115dp"
-        android:layout_marginLeft="16dp"
-        android:textColor="@color/secondary_text"
-        android:text="Horario:"></TextView>
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/primary_text"
+        android:text="Duración/Horario" />
 
-    <TextView android:id="@+id/tx_content_detalles_b"
+    <TextView android:id="@+id/txv_duracion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:layout_marginTop="140dp"
-        android:layout_marginLeft="16dp"
-        android:textColor="@color/secondary_text"
-        android:text="Lugar: SNPP Central" />
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/secondary_text"/>
 
-    <TextView android:id="@+id/tx_content_detalles_c"
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:layout_marginTop="170dp"
-        android:layout_marginLeft="16dp"
-        android:textColor="@color/secondary_text"
-        android:text="Costo: Gratuito" />
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/primary_text"
+        android:text="Costo" />
 
-    <TextView android:id="@+id/tx_content_detalles_d"
+    <TextView android:id="@+id/txv_costo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:layout_marginTop="200dp"
-        android:layout_marginLeft="16dp"
-        android:textColor="@color/secondary_text"
-        android:text="Duración/Horario:" />
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/secondary_text" />
 
 
-    <TextView android:id="@+id/tx_content_detalles_e"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:layout_marginTop="230dp"
-        android:layout_marginLeft="16dp"
-        android:textColor="@color/secondary_text"
-        android:text="Contacto:" />
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/primary_text"
+        android:text="Lugar" />
+
+    <TextView android:id="@+id/txv_lugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/secondary_text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/primary_text"
+        android:text="Contacto" />
 
 
-    <!--<include layout="@layout/content_detalles" />
--->
+    <TextView android:id="@+id/txv_contacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/secondary_text"/>
+
+</LinearLayout>
+
+</ScrollView>
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
