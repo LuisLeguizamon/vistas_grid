@@ -17,13 +17,4 @@ public class Listab_Data {
         this.titles_lista=titles_lista;
     }
 
- /*  private List<Listab_Data> DATA;
-
-    // This method creates an ArrayList that have Listab_Data objects
-    private void initializeData(){
-        DATA =  new ArrayList<>();
-        DATA.add(new Listab_Data(0,0,"ExpoAgro 2016"));
-
-    }
-*/
 }

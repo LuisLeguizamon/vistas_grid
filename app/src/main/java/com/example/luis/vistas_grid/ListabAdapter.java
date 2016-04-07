@@ -18,6 +18,7 @@ import java.util.List;
 public class ListabAdapter extends RecyclerView.Adapter<ListabAdapter.ViewHolder>{
 
     List<Listab_Data> DATA;
+    static int id_grid;
 
 
     // Provide a suitable constructor (depends on the kind of dataset)
@@ -44,11 +45,14 @@ public class ListabAdapter extends RecyclerView.Adapter<ListabAdapter.ViewHolder
         }
         int posit;
         String xs;
+
         @Override
         public void onClick(View v) {
             posit=this.getAdapterPosition();
             xs=String.valueOf(posit);
-            Toast.makeText(v.getContext(), xs , Toast.LENGTH_SHORT).show();
+            int z= id_grid;
+           String xz= String.valueOf(id_grid);
+            Toast.makeText(v.getContext(), xz , Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(v.getContext(),Detalles.class);
             intent.putExtra("position_list",posit);
             Log.d("posit=",String.valueOf(posit));
@@ -65,7 +69,7 @@ public class ListabAdapter extends RecyclerView.Adapter<ListabAdapter.ViewHolder
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.content_listab, parent, false);
         // set the view's size, margins, paddings and layout parameters
         ViewHolder vh = new ViewHolder(v);
-
+        id_grid = DATA.get(0).id_grid;
       // to change color of view
       // vh.itemView.setBackgroundColor(parent.getContext().getResources().getColor(R.color.blue_grey));
         return vh;
