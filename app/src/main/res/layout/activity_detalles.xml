@@ -31,8 +31,15 @@
         android:layout_marginTop="70dp"
         android:layout_marginLeft="16dp"
         android:textColor="@color/primary_text"
-        android:text="Titulo"
         />
+
+    <TextView android:id="@+id/txv_descripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/secondary_text"
+        android:text="Descripcion"
+        android:layout_marginTop="90dp"/>
 
     <TextView android:id="@+id/tx_content_detalles"
         android:layout_width="wrap_content"
@@ -41,7 +48,7 @@
         android:layout_marginTop="110dp"
         android:layout_marginLeft="16dp"
         android:textColor="@color/secondary_text"
-        android:text="Horario: 16:00 hs"></TextView>
+        android:text="Horario: 16"></TextView>
 
     <TextView android:id="@+id/tx_content_detalles_b"
         android:layout_width="wrap_content"
@@ -68,7 +75,7 @@
         android:layout_marginTop="200dp"
         android:layout_marginLeft="16dp"
         android:textColor="@color/secondary_text"
-        android:text="Duración: 10/03 - 20/03" />
+        android:text="Duración/Horario:" />
 
 
     <TextView android:id="@+id/tx_content_detalles_e"
@@ -78,7 +85,7 @@
         android:layout_marginTop="230dp"
         android:layout_marginLeft="16dp"
         android:textColor="@color/secondary_text"
-        android:text="Requisitos: Fotocopia de C.I." />
+        android:text="Contacto:" />
 
 
     <!--<include layout="@layout/content_detalles" />

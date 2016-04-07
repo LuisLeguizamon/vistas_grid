@@ -9,6 +9,9 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Detalles extends AppCompatActivity {
 
 
@@ -28,6 +31,10 @@ public class Detalles extends AppCompatActivity {
             }
         });
 
+        List<Detalles_Data> DATA = new ArrayList<>();
+
+        DATA.add(new Detalles_Data());
+
         //get data from ListabAdapter
         int position_list = getIntent().getExtras().getInt("position_list");
         Log.d("r=", String.valueOf(position_list));
@@ -36,6 +43,7 @@ public class Detalles extends AppCompatActivity {
 
 
         getSupportActionBar().setTitle("Detalles");
+
 
 
 
