@@ -1,22 +1,28 @@
-package com.example.luis.vistas_grid;
+package com.zentcode.cursapp;
 
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
+import com.zentcode.cursapp.R;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Detalles extends AppCompatActivity {
     List<Detalles_Data> DATA = new ArrayList<>();
+    public String[] bar_color = General.bar_color;
+    public int[] statusbar_color = General.statusbar_color;
+    public String[] toolbar_titles = General.toolbar_titles;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,9 +81,10 @@ public class Detalles extends AppCompatActivity {
         else if(position_grid ==1 && position_list ==1){position_detalle=4;}
 
 
-        asign(DATA,position_detalle);
-
-        //getSupportActionBar().setTitle("Detalles");
+        asign(DATA, position_detalle);
+        if(Build.VERSION.SDK_INT>=21){getWindow().setStatusBarColor(ContextCompat.getColor(this.getApplicationContext(), statusbar_color[position_grid]));}
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor(bar_color[position_grid])));
+        getSupportActionBar().setTitle(toolbar_titles[position_grid]);
 
     }
     public void asign(List<Detalles_Data> DATA,int position){

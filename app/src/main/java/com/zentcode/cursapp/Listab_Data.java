@@ -1,7 +1,4 @@
-package com.example.luis.vistas_grid;
-
-import java.util.ArrayList;
-import java.util.List;
+package com.zentcode.cursapp;
 
 /**
  * Created by luis on 15/03/16.

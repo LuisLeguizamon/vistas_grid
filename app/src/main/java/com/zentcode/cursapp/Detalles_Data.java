@@ -1,4 +1,4 @@
-package com.example.luis.vistas_grid;
+package com.zentcode.cursapp;
 
 /**
  * Created by luis on 21/03/16.

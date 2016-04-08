@@ -1,20 +1,16 @@
-package com.example.luis.vistas_grid;
+package com.zentcode.cursapp;
 
 import android.content.Intent;
-import android.media.Image;
-import android.provider.Telephony;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.Button;
 import android.widget.GridView;
-import android.widget.ImageView;
-import android.widget.Toast;
+
+import com.zentcode.cursapp.R;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 

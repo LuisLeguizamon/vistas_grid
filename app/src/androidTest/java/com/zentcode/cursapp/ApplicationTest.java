@@ -1,4 +1,4 @@
-package com.example.luis.vistas_grid;
+package com.zentcode.cursapp;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

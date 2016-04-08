@@ -1,4 +1,4 @@
-package com.example.luis.vistas_grid;
+package com.zentcode.cursapp;
 
 /**
  * Created by luis on 01/02/16.
@@ -6,15 +6,13 @@ package com.example.luis.vistas_grid;
 
 
 import android.content.Context;
-import android.content.res.TypedArray;
 import android.support.v4.content.ContextCompat;
-import android.util.AttributeSet;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.LinearLayoutManager;
 import android.view.View;
-import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 import android.graphics.Canvas;
+
+import com.zentcode.cursapp.R;
 
 public class DividerItemDecoration extends RecyclerView.ItemDecoration {
 

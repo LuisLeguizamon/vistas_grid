@@ -1,4 +1,4 @@
-package com.example.luis.vistas_grid;
+package com.zentcode.luis.cursapp;
 
 import org.junit.Test;
 

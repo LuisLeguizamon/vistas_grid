@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.example.luis.vistas_grid.Listab">
+    tools:context="com.zentcode.cursapp.Listab">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -21,36 +21,12 @@
 
     </android.support.design.widget.AppBarLayout>
 
-
-    <!--<include layout="@layout/content_listab" />-->
-
-
     <android.support.v7.widget.RecyclerView
         android:id="@+id/my_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbars="vertical"
         android:layout_marginTop="56dp"/>
-
-
-
-<!--    <ImageView
-        android:layout_width="180dp"
-        android:layout_height="180dp"
-        android:layout_marginTop="420dp"
-        android:layout_marginLeft="-30dp"
-        android:src="@drawable/ic_launcher_cursapp_transbz"/>
-
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        android:src="@android:drawable/ic_dialog_email" />
-
--->
 
 </android.support.design.widget.CoordinatorLayout>
 

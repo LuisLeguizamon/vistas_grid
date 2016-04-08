@@ -1,4 +1,4 @@
-package com.example.luis.vistas_grid;
+package com.zentcode.cursapp;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -6,6 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
+
+import com.zentcode.cursapp.R;
 
 /**
  * Created by luis on 27/01/16.
