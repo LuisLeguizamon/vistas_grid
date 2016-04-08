@@ -31,11 +31,14 @@
                 app:tabContentStart="72dp" />
 
 
-
+<LinearLayout android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
             <ImageView android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:src="@mipmap/ic_launcher_c"
-                android:padding="16dp"/>
+                android:paddingTop="16dp"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -44,9 +47,7 @@
                 android:textColor="@color/white"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                android:text="Mi Cursapp"
-                android:paddingTop="11dp"
-                android:layout_marginTop="50dp"/>
+                android:text="Mi Cursapp"/>
 
             <TextView android:id="@+id/txv_cupones"
                 android:layout_width="match_parent"
@@ -54,9 +55,7 @@
                 android:textSize="14sp"
                 android:textAlignment="center"
                 android:text="Notificaciones"
-                android:padding="16dp"
-                android:textColor="@color/white"
-                android:layout_marginTop="70dp"/>
+                android:textColor="@color/white"/>
 
             <TextView android:id="@+id/txv_notificaciones"
                 android:layout_width="match_parent"
@@ -64,10 +63,9 @@
                 android:textSize="14sp"
                 android:textAlignment="center"
                 android:text="Cupones"
-                android:padding="16dp"
-                android:textColor="@color/white"
-                android:layout_marginTop="90dp"/>
+                android:textColor="@color/white"/>
 
+</LinearLayout>
         </android.support.design.widget.CollapsingToolbarLayout>
 
 

@@ -28,13 +28,26 @@ public class MainActivity extends AppCompatActivity {
         View colap = findViewById(R.id.collapsing_toolbar);
 
         gridView = (GridView) findViewById(R.id.grid_view);
-       // if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-        //    gridView.setNestedScrollingEnabled(true);
-      //}
-        AppBarLayout.LayoutParams p = (AppBarLayout.LayoutParams) colap.getLayoutParams();
-        p.setScrollFlags(0);
-        colap.setLayoutParams(p);
-
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            gridView.setNestedScrollingEnabled(true);
+      }
+       else if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP){
+            AppBarLayout.LayoutParams p = (AppBarLayout.LayoutParams) colap.getLayoutParams();
+            p.setScrollFlags(0);
+            colap.setLayoutParams(p);
+        }
+        View ll = findViewById(R.id.ll);
+        ll.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(),Profile.class);
+                startActivity(intent);
+            }
+        });
+        //colap.setOnClickListener(AdapterView.OnItemClickListener){
+        //Intent intent = new Intent(this,Profile.class);
+        //};
+        //public void onClick (View v){};
 
         // Construct the data source
         ArrayList<Grid_Data> DATA=new ArrayList<Grid_Data>();
