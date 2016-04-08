@@ -2,6 +2,7 @@ package com.zentcode.cursapp;
 
 import android.content.Intent;
 import android.os.Build;
+import android.support.design.widget.AppBarLayout;
 import android.support.v4.view.ViewCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,6 +10,7 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.Toolbar;
 
 import com.zentcode.cursapp.R;
 
@@ -23,10 +25,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        View colap = findViewById(R.id.collapsing_toolbar);
+
         gridView = (GridView) findViewById(R.id.grid_view);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            gridView.setNestedScrollingEnabled(true);
-      }
+       // if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+        //    gridView.setNestedScrollingEnabled(true);
+      //}
+        AppBarLayout.LayoutParams p = (AppBarLayout.LayoutParams) colap.getLayoutParams();
+        p.setScrollFlags(0);
+        colap.setLayoutParams(p);
 
 
         // Construct the data source
