@@ -1,37 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:scrollbars="vertical">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="@color/colorPrimary">
-        <ImageView android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@mipmap/ic_launcher_c"
-            android:padding="16dp"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            android:text="Mi Cursapp"
-            android:paddingBottom="16dp"/>
-    </LinearLayout>
-    <TextView android:id="@+id/txv_grid"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="16sp"
-        android:textAlignment="center"
-        android:text="Cupones"
-        android:padding="16dp"
-        android:textColor="@color/primary_text"/>
-    -->
 
 <android.support.design.widget.CoordinatorLayout
     android:id="@+id/main_content"
@@ -54,6 +21,7 @@
             android:layout_height="match_parent"
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
+
             <android.support.design.widget.TabLayout
                 android:id="@+id/tabs"
                 android:layout_width="match_parent"
@@ -61,6 +29,7 @@
                 android:layout_gravity="bottom"
                 app:tabMode="scrollable"
                 app:tabContentStart="72dp" />
+
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
@@ -70,7 +39,45 @@
                 app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
                 app:layout_collapseMode="parallax" />
 
+
+            <ImageView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher_c"
+                android:padding="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Mi Cursapp"
+                android:paddingTop="11dp"
+                android:layout_marginTop="50dp"/>
+
+            <TextView android:id="@+id/txv_cupones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textAlignment="center"
+                android:text="Notificaciones"
+                android:padding="16dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="70dp"/>
+
+            <TextView android:id="@+id/txv_notificaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textAlignment="center"
+                android:text="Cupones"
+                android:padding="16dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="90dp"/>
+
         </android.support.design.widget.CollapsingToolbarLayout>
+
 
     </android.support.design.widget.AppBarLayout>
 
