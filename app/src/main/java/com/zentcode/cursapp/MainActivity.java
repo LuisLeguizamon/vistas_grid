@@ -1,6 +1,8 @@
 package com.zentcode.cursapp;
 
 import android.content.Intent;
+import android.os.Build;
+import android.support.v4.view.ViewCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -22,6 +24,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         gridView = (GridView) findViewById(R.id.grid_view);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            gridView.setNestedScrollingEnabled(true);
+      }
+
 
         // Construct the data source
         ArrayList<Grid_Data> DATA=new ArrayList<Grid_Data>();
