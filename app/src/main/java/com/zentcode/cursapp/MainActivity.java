@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
             p.setScrollFlags(0);
             colap.setLayoutParams(p);
         }
-        View ll = findViewById(R.id.ll);
+        View ll = findViewById(R.id.linearlayout);
         ll.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
