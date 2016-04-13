@@ -3,16 +3,12 @@ package com.zentcode.cursapp;
 import android.content.Intent;
 import android.os.Build;
 import android.support.design.widget.AppBarLayout;
-import android.support.v4.view.ViewCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
-import android.widget.Toolbar;
-
-import com.zentcode.cursapp.R;
 
 import java.util.ArrayList;
 
@@ -40,12 +36,12 @@ public class MainActivity extends AppCompatActivity {
         ll.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(),Profile.class);
+                Intent intent = new Intent(v.getContext(),ProfileActivity.class);
                 startActivity(intent);
             }
         });
         //colap.setOnClickListener(AdapterView.OnItemClickListener){
-        //Intent intent = new Intent(this,Profile.class);
+        //Intent intent = new Intent(this,Fragment_profile.class);
         //};
         //public void onClick (View v){};
 
