@@ -46,17 +46,19 @@ public class MainActivity extends AppCompatActivity {
         //public void onClick (View v){};
 
         // Construct the data source
-        ArrayList<Grid_Data> DATA=new ArrayList<Grid_Data>();
+        ArrayList<Data_Grid> DATA=new ArrayList<Data_Grid>();
 
         // Populating Data into GridView
-        DATA.add(new Grid_Data(0,"Agro"));
-        DATA.add(new Grid_Data(1,"Artes"));
-        DATA.add(new Grid_Data(2,"Electricidad"));
-        DATA.add(new Grid_Data(3,"Finanzas"));
-        DATA.add(new Grid_Data(4,"Gastronomía"));
-        DATA.add(new Grid_Data(5,"Idiomas"));
-        DATA.add(new Grid_Data(6,"Salud"));
-        DATA.add(new Grid_Data(7,"Tecnología"));
+        DATA.add(new Data_Grid(0,"Favoritos"));
+        DATA.add(new Data_Grid(1,"Agro"));
+        DATA.add(new Data_Grid(2,"Artes"));
+        DATA.add(new Data_Grid(3,"Becas"));
+        DATA.add(new Data_Grid(4,"Electricidad"));
+        DATA.add(new Data_Grid(5,"Finanzas"));
+        DATA.add(new Data_Grid(6,"Gastronomía"));
+        DATA.add(new Data_Grid(7,"Idiomas"));
+        DATA.add(new Data_Grid(8,"Salud"));
+        DATA.add(new Data_Grid(9,"Tecnología"));
 
         // Create the adapter to convert the array to views
         ImageAdapter adapter = new ImageAdapter(this, DATA);

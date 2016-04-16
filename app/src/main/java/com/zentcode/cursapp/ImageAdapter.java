@@ -8,16 +8,14 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.zentcode.cursapp.R;
-
 import java.util.ArrayList;
 
 /**
  * Created by luis on 18/01/16.
  */
-public class ImageAdapter extends ArrayAdapter<Grid_Data> {
+public class ImageAdapter extends ArrayAdapter<Data_Grid> {
 
-    public ImageAdapter(Context context, ArrayList<Grid_Data> grid_data){
+    public ImageAdapter(Context context, ArrayList<Data_Grid> grid_data){
        super(context,0,grid_data);
 
     }
@@ -41,7 +39,7 @@ public class ImageAdapter extends ArrayAdapter<Grid_Data> {
         //set value into textview
             TextView textv = (TextView) gridView.findViewById(R.id.txt_item);
 
-          Grid_Data item = getItem(position);
+          Data_Grid item = getItem(position);
 
             int id = item.id_grid;
             String titles= item.titles_grid;
@@ -59,36 +57,44 @@ public class ImageAdapter extends ArrayAdapter<Grid_Data> {
 
            // String s = valores[position];
 
-            if (id==0)
+            if(id==0)
+            {
+                imagen.setBackgroundResource(R.drawable.fav_b);
+            }
+            else if (id==1)
             {
                 //imagen.setImageResource(R.mipmap.agro);
                 imagen.setBackgroundResource(R.drawable.agro_b);
             }
-            else if(id==1)
+            else if(id==2)
             {
                 imagen.setBackgroundResource(R.drawable.artes_b);
             }
-            else if(id==2)
+            else if(id==3)
             {
-                imagen.setBackgroundResource(R.drawable.electricidad_b);
-            }
-            else if (id==3)
-            {
-                imagen.setBackgroundResource(R.drawable.finanzas_b);
+                imagen.setBackgroundResource(R.drawable.becas_b);
             }
             else if(id==4)
             {
-                imagen.setBackgroundResource(R.drawable.gastronomia_b);
+                imagen.setBackgroundResource(R.drawable.electricidad_b);
             }
-            else if(id==5)
+            else if (id==5)
             {
-                imagen.setBackgroundResource(R.drawable.idiomas_b);
+                imagen.setBackgroundResource(R.drawable.finanzas_b);
             }
             else if(id==6)
             {
-                imagen.setBackgroundResource(R.drawable.salud_b);
+                imagen.setBackgroundResource(R.drawable.gastronomia_b);
             }
             else if(id==7)
+            {
+                imagen.setBackgroundResource(R.drawable.idiomas_b);
+            }
+            else if(id==8)
+            {
+                imagen.setBackgroundResource(R.drawable.salud_b);
+            }
+            else if(id==9)
             {
                 imagen.setBackgroundResource(R.drawable.tecnologia_b);
             }
