@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.zentcode.cursapp.R;
 
@@ -43,16 +44,14 @@ public class ListabAdapter extends RecyclerView.Adapter<ListabAdapter.ViewHolder
         public TextView getTexto(){
             return texto;
         }
-        int posit;
-        String xs;
 
         @Override
         public void onClick(View v) {
-            posit=this.getAdapterPosition();
-            xs=String.valueOf(posit);
+            int posit=this.getAdapterPosition();
+            String xs=String.valueOf(posit);
             int id_grid_int= id_grid;
             //String id_grid_string= String.valueOf(id_grid_int);
-            //Toast.makeText(v.getContext(), id_grid_string , Toast.LENGTH_SHORT).show();
+            //Toast.makeText(v.getContext(), id_grid_string, Toast.LENGTH_SHORT).show();
 
             Bundle bund = new Bundle();
             bund.putInt("position_grid",id_grid_int);

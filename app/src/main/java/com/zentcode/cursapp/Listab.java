@@ -61,7 +61,7 @@ public class Listab extends AppCompatActivity {
         } else if (position_grid == 2) {
             val=new String[]{"Diseño Gráfico","Encuadernación","Impresión Offset","Serigrafía"};
         } else if (position_grid == 4) {
-            val= new String[]{"Automatización industrialo","Arrancadores suaves (Soft - starter)","Corrección de factor de potencia en instalaciones eléctricas","Controladores lógicos programables (PLCs)","Generadores de emergencia","Protección y puesta a tierra de instalaciones eléctricas","Sistema SCADA"};
+            val= new String[]{"Automatización industrial","Arrancadores suaves (Soft - starter)","Corrección de factor de potencia en instalaciones eléctricas","Controladores lógicos programables (PLCs)","Generadores de emergencia","Protección y puesta a tierra de instalaciones eléctricas","Sistema SCADA"};
         } else if (position_grid == 5) {
             val = new String[]{"Análisis del mercado", "Atención al cliente", "Como elaborar un plan de marketing", "Excel avanzado", "Flujo de caja", "Gestión de caja y tesorería"};
         } else if (position_grid == 6) {

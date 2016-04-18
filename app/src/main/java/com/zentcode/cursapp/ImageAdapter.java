@@ -1,6 +1,7 @@
 package com.zentcode.cursapp;
 
 import android.content.Context;
+import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,7 +15,7 @@ import java.util.ArrayList;
  * Created by luis on 18/01/16.
  */
 public class ImageAdapter extends ArrayAdapter<Data_Grid> {
-
+public int[] grid_color = General.grid_color;
     public ImageAdapter(Context context, ArrayList<Data_Grid> grid_data){
        super(context,0,grid_data);
 
@@ -46,12 +47,9 @@ public class ImageAdapter extends ArrayAdapter<Data_Grid> {
 
             textv.setText(titles);
 
-           //traemos el array del xml colors
-
-            int [] rainbow = getContext().getResources().getIntArray(R.array.rainbow);
-
             //cambia el color de fondo del texto de acuerdo a la posicion
-            textv.setBackgroundColor(rainbow[position]);
+
+            textv.setBackgroundColor(ContextCompat.getColor(getContext(),grid_color[position]));
 
             ImageView imagen = (ImageView) gridView.findViewById(R.id.image_item);
 
