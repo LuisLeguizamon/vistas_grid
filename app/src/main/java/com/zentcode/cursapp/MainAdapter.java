@@ -1,11 +1,13 @@
 package com.zentcode.cursapp;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -14,9 +16,9 @@ import java.util.ArrayList;
 /**
  * Created by luis on 18/01/16.
  */
-public class ImageAdapter extends ArrayAdapter<Data_Grid> {
+public class MainAdapter extends ArrayAdapter<Data_Grid> {
 public int[] grid_color = General.grid_color;
-    public ImageAdapter(Context context, ArrayList<Data_Grid> grid_data){
+    public MainAdapter(Context context, ArrayList<Data_Grid> grid_data){
        super(context,0,grid_data);
 
     }
@@ -38,18 +40,18 @@ public int[] grid_color = General.grid_color;
 
 
         //set value into textview
-            TextView textv = (TextView) gridView.findViewById(R.id.txt_item);
+        //    TextView textv = (TextView) gridView.findViewById(R.id.txt_item);
+        Button button_cat = (Button) gridView.findViewById(R.id.btn_cat);
 
           Data_Grid item = getItem(position);
 
-            int id = item.id_grid;
+           final int id = item.id_grid;
             String titles= item.titles_grid;
-
-            textv.setText(titles);
+             button_cat.setText(titles);
 
             //cambia el color de fondo del texto de acuerdo a la posicion
 
-            textv.setBackgroundColor(ContextCompat.getColor(getContext(),grid_color[position]));
+            button_cat.setBackgroundColor(ContextCompat.getColor(getContext(), grid_color[position]));
 
             ImageView imagen = (ImageView) gridView.findViewById(R.id.image_item);
 
@@ -61,16 +63,15 @@ public int[] grid_color = General.grid_color;
             }
             else if (id==1)
             {
-                //imagen.setImageResource(R.mipmap.agro);
-                imagen.setBackgroundResource(R.drawable.agro_b);
+                imagen.setBackgroundResource(R.drawable.recomendados_b);
             }
             else if(id==2)
             {
-                imagen.setBackgroundResource(R.drawable.artes_b);
+                imagen.setBackgroundResource(R.drawable.agro_b);
             }
             else if(id==3)
             {
-                imagen.setBackgroundResource(R.drawable.becas_b);
+                imagen.setBackgroundResource(R.drawable.artes_b);
             }
             else if(id==4)
             {
@@ -97,6 +98,36 @@ public int[] grid_color = General.grid_color;
                 imagen.setBackgroundResource(R.drawable.tecnologia_b);
             }
 
+        gridView.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                if(id==0){
+                    Intent intent = new Intent(getContext(),FavoritosActivity.class);
+                    getContext().startActivity(intent);
+                }
+                else {
+                    Intent intent = new Intent(getContext(), Listab.class);
+                    intent.putExtra("position", id);
+                    getContext().startActivity(intent);
+                }
+            }
+        });
+
+        button_cat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (id==0){
+                    Intent intent = new Intent(getContext(),FavoritosActivity.class);
+                    getContext().startActivity(intent);
+                }
+
+                else {
+                    Intent intent = new Intent(getContext(), Listab.class);
+                    intent.putExtra("position", id);
+                    getContext().startActivity(intent);
+                }
+            }
+        });
 
         return gridView;
 

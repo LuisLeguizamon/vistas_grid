@@ -55,10 +55,10 @@ public class Listab extends AppCompatActivity {
         int position_grid = getIntent().getExtras().getInt("position");
 
 
-        if (position_grid == 1) {
+        if (position_grid == 2) {
             val= new String[]{"Feria del Productor al Consumidor en la Facultad de Agronomía","Inseminación Artificial","XIX Seminario Latinoamericano y del Caribe de Ciencia y Tecnología de los Alimentos"};
             // getSupportActionBar().setBackgroundDrawable(getResources().getDrawable(R.drawable.agro_b));
-        } else if (position_grid == 2) {
+        } else if (position_grid == 3) {
             val=new String[]{"Diseño Gráfico","Encuadernación","Impresión Offset","Serigrafía"};
         } else if (position_grid == 4) {
             val= new String[]{"Automatización industrial","Arrancadores suaves (Soft - starter)","Corrección de factor de potencia en instalaciones eléctricas","Controladores lógicos programables (PLCs)","Generadores de emergencia","Protección y puesta a tierra de instalaciones eléctricas","Sistema SCADA"};

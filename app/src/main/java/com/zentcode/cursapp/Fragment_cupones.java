@@ -24,7 +24,7 @@ public class Fragment_cupones extends Fragment{
         DATA.add(new Data_cupones(1,"Introducción al Francés Jurídico","50% de descuento"));
         DATA.add(new Data_cupones(2,"Seminario Internacional de Seguridad Social","Acceso libre - 100% de descuento"));
 
-        CustomArrayAdapterCupones adapter = new CustomArrayAdapterCupones(getActivity(),DATA);
+        Fragment_cupones_Adapter adapter = new Fragment_cupones_Adapter(getActivity(),DATA);
         listView.setAdapter(adapter);
 
         return view;

@@ -2,68 +2,41 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:orientation="vertical"
-    android:background="@color/light_grey"
+    android:orientation="horizontal"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    android:divider="@drawable/line_divider_white"
+    android:showDividers="middle"
     tools:context=".Fragment_profile">
-
-<!--
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-  <ImageView
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:background="@mipmap/ic_launcher_c"
-      android:layout_gravity="center"/>
-    <TextView android:id="@+id/txv_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="John Doe"
-        android:textSize="20sp"
-        android:textColor="@color/primary_text"
-        android:textAlignment="center" />
-
-    </LinearLayout>
--->
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center"
-        android:paddingTop="10dp"
-        android:divider="@drawable/line_divider"
-        android:showDividers="middle">
 
               <Button android:id="@+id/btn_notif"
                   android:layout_width="145dp"
-                  android:layout_height="46dp"
+                  android:layout_height="match_parent"
                   android:text="Notificaciones"
                   android:textAllCaps="false"
                   android:textSize="16sp"
                   android:textAlignment="center"
-                  android:textColor="@color/colorPrimary"
-                  android:background="@color/light_grey"
-                  android:drawableTop="@drawable/ic_notification_blue_24dp"
-                  android:onClick=""/>
+                  android:textColor="@color/white"
+                  android:background="@color/colorPrimary"
+                  android:drawableTop="@drawable/ic_notification_white_24dp"
+                  style="?android:attr/borderlessButtonStyle"/>
 
               <Button android:id="@+id/btn_cupones"
                   android:layout_width="145dp"
-                  android:layout_height="46dp"
+                  android:layout_height="match_parent"
                   android:text="Cupones"
                   android:textAllCaps="false"
                   android:textSize="16sp"
                   android:textAlignment="center"
                   android:textColor="@color/blue_grey_dark"
-                  android:background="@color/light_grey"
-                  android:drawableTop="@drawable/ic_receipt_black_24dp"/>
+                  android:background="@color/colorPrimary"
+                  android:drawableTop="@drawable/ic_receipt_bluegreydark_24dp"
+                  style="?android:attr/borderlessButtonStyle"/>
 
-
-    </LinearLayout>
 
 </LinearLayout>

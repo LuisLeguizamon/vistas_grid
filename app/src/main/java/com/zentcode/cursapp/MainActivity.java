@@ -50,9 +50,9 @@ public class MainActivity extends AppCompatActivity {
 
         // Populating Data into GridView
         DATA.add(new Data_Grid(0,"Favoritos"));
-        DATA.add(new Data_Grid(1,"Agro"));
-        DATA.add(new Data_Grid(2,"Artes"));
-        DATA.add(new Data_Grid(3,"Becas"));
+        DATA.add(new Data_Grid(1,"Recomendados"));
+        DATA.add(new Data_Grid(2,"Agro"));
+        DATA.add(new Data_Grid(3,"Artes"));
         DATA.add(new Data_Grid(4,"Electricidad"));
         DATA.add(new Data_Grid(5,"Finanzas"));
         DATA.add(new Data_Grid(6,"Gastronomía"));
@@ -61,17 +61,12 @@ public class MainActivity extends AppCompatActivity {
         DATA.add(new Data_Grid(9,"Tecnología"));
 
         // Create the adapter to convert the array to views
-        ImageAdapter adapter = new ImageAdapter(this, DATA);
+        MainAdapter adapter = new MainAdapter(this, DATA);
 // Attach the adapter to a GridView
 
         gridView.setAdapter(adapter);
 
-        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                ir(position);
-            }
-        });}
+       }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -80,10 +75,5 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-    public void ir(int position_grid) {
-        Intent intent = new Intent(this,Listab.class);
-        intent.putExtra("position", position_grid);
-        startActivity(intent);
-    }
 
 }

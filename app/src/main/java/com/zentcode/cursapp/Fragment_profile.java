@@ -25,20 +25,20 @@ public class Fragment_profile extends Fragment {
         fragmentTransaction.add(R.id.contentFragment, fragment_notif);
         fragmentTransaction.commit();
 
-        final Drawable ic_notif_blue = ResourcesCompat.getDrawable(getResources(),R.drawable.ic_notification_blue_24dp,null);
-        final Drawable ic_notif_black = ResourcesCompat.getDrawable(getResources(),R.drawable.ic_notification_black_24dp,null);
-        final Drawable ic_receipt_blue= ResourcesCompat.getDrawable(getResources(),R.drawable.ic_receipt_blue_24dp,null);
-        final Drawable ic_receipt_black = ResourcesCompat.getDrawable(getResources(),R.drawable.ic_receipt_black_24dp,null);
+        final Drawable ic_notif_white = ResourcesCompat.getDrawable(getResources(),R.drawable.ic_notification_white_24dp,null);
+        final Drawable ic_notif_grey = ResourcesCompat.getDrawable(getResources(),R.drawable.ic_notification_bluegreydark_24dp,null);
+        final Drawable ic_receipt_white= ResourcesCompat.getDrawable(getResources(),R.drawable.ic_receipt_white_24dp,null);
+        final Drawable ic_receipt_grey = ResourcesCompat.getDrawable(getResources(),R.drawable.ic_receipt_bluegreydark_24dp,null);
 
         final Button button_notif = (Button) view.findViewById(R.id.btn_notif);
         final Button button_cupones = (Button) view.findViewById(R.id.btn_cupones);
 
         button_notif.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v){
-                button_notif.setTextColor(Color.parseColor("#008dc5"));
+                button_notif.setTextColor(Color.parseColor("#FFFFFF"));
                 button_cupones.setTextColor(Color.parseColor("#455A64"));
-                button_notif.setCompoundDrawablesWithIntrinsicBounds(null,ic_notif_blue,null,null);
-                button_cupones.setCompoundDrawablesWithIntrinsicBounds(null,ic_receipt_black,null,null);
+                button_notif.setCompoundDrawablesWithIntrinsicBounds(null,ic_notif_white,null,null);
+                button_cupones.setCompoundDrawablesWithIntrinsicBounds(null,ic_receipt_grey,null,null);
 
                 FragmentManager fragmentManager = getFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
@@ -51,10 +51,10 @@ public class Fragment_profile extends Fragment {
 
         button_cupones.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                button_cupones.setTextColor(Color.parseColor("#008dc5"));
+                button_cupones.setTextColor(Color.parseColor("#FFFFFF"));
                 button_notif.setTextColor(Color.parseColor("#455A64"));
-                button_cupones.setCompoundDrawablesWithIntrinsicBounds(null,ic_receipt_blue,null,null);
-                button_notif.setCompoundDrawablesWithIntrinsicBounds(null,ic_notif_black,null,null);
+                button_cupones.setCompoundDrawablesWithIntrinsicBounds(null,ic_receipt_white,null,null);
+                button_notif.setCompoundDrawablesWithIntrinsicBounds(null,ic_notif_grey,null,null);
 
                 FragmentManager fragmentManager = getFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    android:divider="@drawable/line_divider_white"
+    android:showDividers="middle"
+    tools:context=".Fragment_favoritos"
+    android:padding="16dp">
+
+    <Button android:id="@+id/btn_favoritos"
+        android:layout_width="145dp"
+        android:layout_height="match_parent"
+        android:text="Mis Favoritos"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:drawableTop="@drawable/ic_grade_white_24dp"
+        style="?android:attr/borderlessButtonStyle"/>
+
+    <Button android:id="@+id/btn_cat"
+        android:layout_width="145dp"
+        android:layout_height="match_parent"
+        android:text="Mis Categorias"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/blue_grey_dark"
+        android:drawableTop="@drawable/ic_receipt_bluegreydark_24dp"
+        style="?android:attr/borderlessButtonStyle"/>
+
+</LinearLayout>
