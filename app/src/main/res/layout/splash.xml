@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LANZAMIENTO"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:paddingTop="36dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OFICIAL"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:paddingBottom="36dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="03.06.2016"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:background="@color/white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AV. SACRAMENTO 945"
+        android:textSize="28sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:paddingTop="50dp"/>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="3dp"
+        android:background="@color/white"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="19:00hs"
+        android:textSize="28sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:paddingTop="6dp"
+        />
+
+
+</LinearLayout>

@@ -33,7 +33,7 @@ public class Detalles extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Curso agregado a tu lista de favoritos", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "Curso agregado a Favoritos", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });

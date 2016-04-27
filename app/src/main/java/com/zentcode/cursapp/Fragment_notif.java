@@ -15,7 +15,7 @@ public class Fragment_notif extends ListFragment {
     public void onActivityCreated(Bundle savedInstanceState){
         super.onActivityCreated(savedInstanceState);
         final String[] values = new String[] {"Solo faltan 7 días para Introducción al Francés Jurídico - CEDEP",
-                "Tenés un nuevo Cupón Cursapp","a","v","c","d","a","v","c","d","a","v","c","d"};
+                "Tenés un nuevo Cupón Cursapp"};
 
         ArrayAdapter adapter = new ArrayAdapter(getActivity(),android.R.layout.simple_list_item_1,values);
         setListAdapter(adapter);
