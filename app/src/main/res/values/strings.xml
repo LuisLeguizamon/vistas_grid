@@ -6,6 +6,7 @@
     <string name="action_settings">Configuración</string>
     <string name="action_search">Buscar</string>
     <string name="title_activity_detalles">Detalles</string>
+    <string name="title_activity_main2">Main2Activity</string>
 
     <!--
     android:fontFamily="sans-serif"           // roboto regular

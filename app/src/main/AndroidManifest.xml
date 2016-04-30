@@ -15,7 +15,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
         <activity
             android:name=".Listab"
             android:label="@string/title_activity_listab"
@@ -24,13 +24,15 @@
             android:name=".Detalles"
             android:label="@string/title_activity_detalles"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ProfileActivity"></activity>
-        <activity android:name=".FavoritosActivity"/>
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".FavoritosActivity" />
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
-</manifest>
-
-<!--
+</manifest><!--
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher_cursapp"
@@ -53,5 +55,4 @@
 
         </activity>
     </application>
-
 -->
