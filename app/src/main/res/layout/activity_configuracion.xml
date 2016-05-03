@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorPrimary">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:src="@drawable/logo_cursapp_g3017"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="john.doe@gmail.com"
+        android:textSize="16dp"
+        android:padding="8dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50dp"
+        android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <Button android:id="@+id/btn_cerrar_sesion"
+        style="@style/button_flat"
+        android:text="Cerrar Sesión"
+        android:background="@color/white"
+        android:textColor="@color/colorPrimary"
+        android:layout_gravity="center"
+        android:layout_width="220dp"/>
+</LinearLayout>

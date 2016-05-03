@@ -40,7 +40,7 @@
 
             <ImageView android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@mipmap/ic_launcher_c"
+                android:src="@mipmap/ic_cursapp_final"
                 android:paddingTop="16dp"/>
 
             <TextView

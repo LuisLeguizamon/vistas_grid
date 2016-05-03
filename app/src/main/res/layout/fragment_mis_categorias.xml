@@ -8,14 +8,29 @@ tools:context="com.zentcode.cursapp.FavoritosActivity">
 
     <include layout="@layout/fragment_mis_categorias_content" />
 
+<!--<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" AGREGAR CATEGORIA "
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="16dp"
+        android:padding="16dp"/>
+</LinearLayout>
+    -->
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab_add_cat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="16dp"
-        android:src="@drawable/ic_add_white_24dp"/>
-    
+        android:src="@drawable/ic_add_white_24dp"
+        app:backgroundTint="@color/colorPrimary"/>
+
+
 </android.support.design.widget.CoordinatorLayout>
 
 
