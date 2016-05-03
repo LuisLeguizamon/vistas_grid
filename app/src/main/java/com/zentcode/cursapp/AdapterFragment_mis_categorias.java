@@ -12,8 +12,8 @@ import java.util.ArrayList;
 /**
  * Created by luis on 27/04/16.
  */
-public class Fragment_mis_categorias_Adapter extends ArrayAdapter<Data_mis_categorias> {
-    public Fragment_mis_categorias_Adapter(Context context, ArrayList<Data_mis_categorias> values){
+public class AdapterFragment_mis_categorias extends ArrayAdapter<Data_mis_categorias> {
+    public AdapterFragment_mis_categorias(Context context, ArrayList<Data_mis_categorias> values){
         super(context,0,values);
     }
     @Override

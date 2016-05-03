@@ -8,6 +8,9 @@
     <string name="title_activity_detalles">Detalles</string>
     <string name="title_activity_main2">Main2Activity</string>
 
+    <string name="dialog_cerrar_sesion">¿Está seguro que desea cerrar sesión?</string>
+    <string name="dialog_si">Si</string>
+    <string name="dialog_cancelar">Cancelar</string>
     <!--
     android:fontFamily="sans-serif"           // roboto regular
     android:fontFamily="sans-serif-light"     // roboto light

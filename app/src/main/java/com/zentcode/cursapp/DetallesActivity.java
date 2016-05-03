@@ -16,7 +16,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Detalles extends AppCompatActivity {
+public class DetallesActivity extends AppCompatActivity {
     List<Data_Detalles> DATA = new ArrayList<>();
     public String[] bar_color = General.bar_color;
     public int[] statusbar_color = General.statusbar_color;
@@ -64,7 +64,7 @@ public class Detalles extends AppCompatActivity {
                 "10 de marzo - 13 de marzo / 8:00 a 11:00 hs", "100.000 Gs",
                 "SNPP", "0981200100"));
 
-        //get data from ListabAdapter
+        //get data from AdapterListab
 
         int position_grid = getIntent().getExtras().getInt("position_grid");
         int position_list = getIntent().getExtras().getInt("position_list");

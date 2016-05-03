@@ -9,16 +9,15 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 
 /**
  * Created by luis on 18/01/16.
  */
-public class MainAdapter extends ArrayAdapter<Data_Grid> {
+public class AdapterMain extends ArrayAdapter<Data_Grid> {
 public int[] grid_color = General.grid_color;
-    public MainAdapter(Context context, ArrayList<Data_Grid> grid_data){
+    public AdapterMain(Context context, ArrayList<Data_Grid> grid_data){
        super(context,0,grid_data);
 
     }
@@ -106,7 +105,7 @@ public int[] grid_color = General.grid_color;
                     getContext().startActivity(intent);
                 }
                 else {
-                    Intent intent = new Intent(getContext(), Listab.class);
+                    Intent intent = new Intent(getContext(), ListabActivity.class);
                     intent.putExtra("position", id);
                     getContext().startActivity(intent);
                 }
@@ -122,7 +121,7 @@ public int[] grid_color = General.grid_color;
                 }
 
                 else {
-                    Intent intent = new Intent(getContext(), Listab.class);
+                    Intent intent = new Intent(getContext(), ListabActivity.class);
                     intent.putExtra("position", id);
                     getContext().startActivity(intent);
                 }

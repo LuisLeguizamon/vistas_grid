@@ -10,12 +10,10 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 
-import com.zentcode.cursapp.R;
-
 import java.util.ArrayList;
 import java.util.List;
 
-public class Listab extends AppCompatActivity {
+public class ListabActivity extends AppCompatActivity {
 
     private RecyclerView mRecyclerView;
     private RecyclerView.Adapter mAdapter;
@@ -41,7 +39,7 @@ public class Listab extends AppCompatActivity {
             }
         });
 */
-        List<Listab_Data> DATA = new ArrayList<>();
+        List<Data_Listab> DATA = new ArrayList<>();
 
         mRecyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
 
@@ -80,13 +78,13 @@ public class Listab extends AppCompatActivity {
         populate(position_grid,position_list,DATA, val);
 
         //specify an adapter
-        mAdapter = new ListabAdapter(DATA);
+        mAdapter = new AdapterListab(DATA);
         mRecyclerView.setAdapter(mAdapter);
     }
 
-    public void populate(int grid,int i,List<Listab_Data> DATA,String[] val){
+    public void populate(int grid,int i,List<Data_Listab> DATA,String[] val){
         for(i=0;i<val.length;i=i+1){
-            DATA.add(new Listab_Data(grid,i,val[i]));
+            DATA.add(new Data_Listab(grid,i,val[i]));
         }
     }
 }

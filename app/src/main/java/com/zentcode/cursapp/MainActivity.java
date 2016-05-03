@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.GridView;
 
 import java.util.ArrayList;
@@ -63,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
         DATA.add(new Data_Grid(9,"Tecnología"));
 
         // Create the adapter to convert the array to views
-        MainAdapter adapter = new MainAdapter(this, DATA);
+        AdapterMain adapter = new AdapterMain(this, DATA);
 // Attach the adapter to a GridView
 
         gridView.setAdapter(adapter);

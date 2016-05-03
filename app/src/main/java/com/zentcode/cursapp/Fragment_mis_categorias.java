@@ -1,14 +1,12 @@
 package com.zentcode.cursapp;
 
 import android.app.Fragment;
-import android.app.ListFragment;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -28,22 +26,8 @@ public class Fragment_mis_categorias extends Fragment {
         ArrayList<Data_mis_categorias> DATA = new ArrayList<>();
         DATA.add(new Data_mis_categorias(0,titles[5]));
         DATA.add(new Data_mis_categorias(1,titles[7]));
-        DATA.add(new Data_mis_categorias(2,titles[1]));
-        DATA.add(new Data_mis_categorias(3,titles[1]));
-        DATA.add(new Data_mis_categorias(4,titles[1]));
-        DATA.add(new Data_mis_categorias(5,titles[1]));
-        DATA.add(new Data_mis_categorias(6,titles[1]));
-        DATA.add(new Data_mis_categorias(7,titles[1]));
-        DATA.add(new Data_mis_categorias(8,titles[1]));
-        DATA.add(new Data_mis_categorias(9,titles[1]));
-        DATA.add(new Data_mis_categorias(10,titles[1]));
-        DATA.add(new Data_mis_categorias(11,titles[1]));
-        DATA.add(new Data_mis_categorias(12,titles[1]));
-        DATA.add(new Data_mis_categorias(13,titles[1]));
-        DATA.add(new Data_mis_categorias(14,titles[1]));
-        DATA.add(new Data_mis_categorias(15,titles[1]));
 
-        Fragment_mis_categorias_Adapter adapter = new Fragment_mis_categorias_Adapter(getActivity(),DATA);
+        AdapterFragment_mis_categorias adapter = new AdapterFragment_mis_categorias(getActivity(),DATA);
         listView.setAdapter(adapter);
 
         FloatingActionButton fab = (FloatingActionButton) view.findViewById(R.id.fab_add_cat);

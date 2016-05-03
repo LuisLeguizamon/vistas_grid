@@ -12,9 +12,9 @@ import java.util.ArrayList;
 /**
  * Created by luis on 13/04/16.
  */
-public class Fragment_cupones_Adapter extends ArrayAdapter<Data_cupones>{
+public class AdapterFragment_cupones extends ArrayAdapter<Data_cupones>{
 
-    public Fragment_cupones_Adapter(Context context, ArrayList<Data_cupones> values){
+    public AdapterFragment_cupones(Context context, ArrayList<Data_cupones> values){
         super(context,0,values);
     }
 @Override

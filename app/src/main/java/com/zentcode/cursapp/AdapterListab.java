@@ -7,23 +7,20 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import com.zentcode.cursapp.R;
 
 import java.util.List;
 
 /**
  * Created by luis on 29/01/16.
  */
-public class ListabAdapter extends RecyclerView.Adapter<ListabAdapter.ViewHolder>{
+public class AdapterListab extends RecyclerView.Adapter<AdapterListab.ViewHolder>{
 
-    List<Listab_Data> DATA;
+    List<Data_Listab> DATA;
     static int id_grid;
 
 
     // Provide a suitable constructor (depends on the kind of dataset)
-    public ListabAdapter(List<Listab_Data> data){
+    public AdapterListab(List<Data_Listab> data){
         this.DATA=data;
     }
 
@@ -56,7 +53,7 @@ public class ListabAdapter extends RecyclerView.Adapter<ListabAdapter.ViewHolder
             Bundle bund = new Bundle();
             bund.putInt("position_grid",id_grid_int);
             bund.putInt("position_list", posit);
-            Intent intent = new Intent(v.getContext(),Detalles.class);
+            Intent intent = new Intent(v.getContext(),DetallesActivity.class);
             intent.putExtras(bund);
             //Log.d("posit=",String.valueOf(posit));
             v.getContext().startActivity(intent);
@@ -66,7 +63,7 @@ public class ListabAdapter extends RecyclerView.Adapter<ListabAdapter.ViewHolder
 
     // Create new views (invoked by the layout manager)
     @Override
-    public ListabAdapter.ViewHolder onCreateViewHolder(ViewGroup parent,int viewType) {
+    public AdapterListab.ViewHolder onCreateViewHolder(ViewGroup parent,int viewType) {
         // create a new view
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.content_listab, parent, false);
         // set the view's size, margins, paddings and layout parameters

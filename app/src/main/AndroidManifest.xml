@@ -17,11 +17,11 @@
         </activity>
         <activity android:name=".MainActivity" />
         <activity
-            android:name=".Listab"
+            android:name=".ListabActivity"
             android:label="@string/title_activity_listab"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Detalles"
+            android:name=".DetallesActivity"
             android:label="@string/title_activity_detalles"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ProfileActivity" />
