@@ -38,8 +38,8 @@ public class Fragment_favoritos extends Fragment {
         final Button button_favoritos = (Button) view.findViewById(R.id.btn_favoritos);
         final Button button_cat = (Button) view.findViewById(R.id.btn_cat);
 
-        button_favoritos.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+        button_favoritos.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
                 button_favoritos.setTextColor(Color.parseColor("#FFFFFF"));
                 button_cat.setTextColor(Color.parseColor("#455A64"));
                 button_favoritos.setCompoundDrawablesWithIntrinsicBounds(null, ic_grade_white, null, null);
@@ -63,6 +63,8 @@ public class Fragment_favoritos extends Fragment {
                 fragmentTransaction.commit();
             }
         });
+
+
         return view;
     }
 }

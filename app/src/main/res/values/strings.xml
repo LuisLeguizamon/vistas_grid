@@ -11,6 +11,12 @@
     <string name="dialog_cerrar_sesion">¿Está seguro que desea cerrar sesión?</string>
     <string name="dialog_si">Si</string>
     <string name="dialog_cancelar">Cancelar</string>
+
+    <string name="mis_categorias">Marca tus Intereses</string>
+    <string name="ok">Ok</string>
+
+
+
     <!--
     android:fontFamily="sans-serif"           // roboto regular
     android:fontFamily="sans-serif-light"     // roboto light
