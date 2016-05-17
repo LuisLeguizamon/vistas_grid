@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Vistas_grid.iml" filepath="$PROJECT_DIR$/Vistas_grid.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vistas_grid.iml" filepath="$PROJECT_DIR$/vistas_grid.iml" />
     </modules>
   </component>
 </project>
