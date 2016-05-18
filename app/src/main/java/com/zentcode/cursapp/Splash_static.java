@@ -27,11 +27,11 @@ public class Splash_static extends AppCompatActivity {
             @Override
             public void onClick(final View v) {
                 counter++;
-                String counter_string= String.valueOf(counter);
-                Toast.makeText(v.getContext(), counter_string, Toast.LENGTH_SHORT).show();
-                if (counter==7){
+                if (counter==10){
+                    String counter_string= String.valueOf(counter);
+                    Toast.makeText(v.getContext(), counter_string, Toast.LENGTH_SHORT).show();
                     counter=1;
-                    Intent intent = new Intent(v.getContext(),MainActivity.class);
+                    Intent intent = new Intent(v.getContext(),Login.class);
                     startActivity(intent);
                 }
             }
